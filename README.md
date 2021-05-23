@@ -154,7 +154,7 @@ $ node index.js
 
 ## Possibles Problems:
 
-Failed to download Chromium r536395! Set "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" env variable to skip download.
+Failed to download Chromium r536395! Set "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" env variable to skip download.  
 https://github.com/puppeteer/puppeteer/issues/2173
 
 ---
@@ -163,6 +163,6 @@ https://github.com/puppeteer/puppeteer/issues/2173
 
 ## References:
 
-https://github.com/puppeteer/puppeteer/issues/1837#issuecomment-689006806
-https://ohaleks.hashnode.dev/using-puppeteer-on-windows-with-wsl
+https://github.com/puppeteer/puppeteer/issues/1837#issuecomment-689006806  
+https://ohaleks.hashnode.dev/using-puppeteer-on-windows-with-wsl  
 https://nickymeuleman.netlify.app/blog/gui-on-wsl2-cypress

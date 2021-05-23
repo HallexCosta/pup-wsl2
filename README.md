@@ -6,6 +6,9 @@
 
 - [Getting Started](#getting-started)
   - [Update APT Packages](#update-apt-packages)
+  - [Configure Sudoers](#configure-sudoers)
+    - [Paste Sudoers Configs](#paste-sudoers-configs)
+    - [Save Dbus File](#save-dbus-file)
   - [Create Project Folder](#create-project-folder)
     - [Install puppeteer libraries](#install-puppeteer-libraries)
     - [Initialization NodeJS Project](#initialization-nodejs-project)
@@ -13,6 +16,7 @@
     - [Active Modules in NodeJS](#active-modules-in-nodejs)
     - [Code](#code)
     - [Run Project](#run-project)
+    - [Finish](#Finish)
 - [References](#references)
 - [Possibles Problems](#possibles-problems)
 
@@ -30,6 +34,33 @@ $ sudo apt update
 # Step 2
 $ sudo apt upgrade
 ```
+
+[](#configure-sudoers)
+
+## Configure Sudoers
+
+> Run command bellow
+
+```sh
+# Open dbus files
+$ sudo vim /etc/sudoers.d/dbus
+```
+
+[](#paste-sudoers-configs)
+
+## Paste Sudoers Configs
+
+```sh
+# /etc/sudoers.d/dbus
+<yourname> ALL = (root) NOPASSWD: /etc/init.d/dbus
+```
+
+[](#save-dbus-file)
+
+## Save Dbus File
+
+> Save file, back to normal mode with _<ESC>_ and execute _:wq_
+> to write and exit of file
 
 [](#create-project-folder)
 
@@ -145,6 +176,10 @@ import puppeteer from "puppeteer";
 ```sh
 $ node index.js
 ```
+
+[](#finish)
+
+## Finish
 
 > Should open the browser in goto page `https://example.com`
 

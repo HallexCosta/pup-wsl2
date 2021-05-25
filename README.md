@@ -5,22 +5,77 @@
 ## Guide
 
 - [Getting Started](#getting-started)
-  - [Update APT Packages](#update-apt-packages)
-  - [Configure Sudoers](#configure-sudoers)
-    - [Paste Sudoers Configs](#paste-sudoers-configs)
-    - [Save Dbus File](#save-dbus-file)
-  - [Create Project Folder](#create-project-folder)
-    - [Install puppeteer libraries](#install-puppeteer-libraries)
-    - [Initialization NodeJS Project](#initialization-nodejs-project)
-    - [Install Puppeteer](#install-puppeteer)
-    - [Active Modules in NodeJS](#active-modules-in-nodejs)
-    - [Code](#code)
-    - [Run Project](#run-project)
-    - [Finish](#Finish)
-- [References](#references)
+  - [Windows](#windows)
+    - [VcXsrv](#vcxsrv)
+      - [Download VcXsrv](#download-vcxsrv)
+      - [Install VcXsrv](#install-vcxsrv)
+      - [Usage VcXsrv](#usage-vcxsrv)
+  - [Linux (WSL 2)](#linux-wsl-2)
+    - [Update APT Packages](#update-apt-packages)
+    - [Configure Sudoers](#configure-sudoers)
+      - [Paste Sudoers Configs](#paste-sudoers-configs)
+      - [Save Dbus File](#save-dbus-file)
+    - [Create Project Folder](#create-project-folder)
+      - [Install puppeteer libraries](#install-puppeteer-libraries)
+      - [Initialization NodeJS Project](#initialization-nodejs-project)
+      - [Install Puppeteer](#install-puppeteer)
+      - [Active Modules in NodeJS](#active-modules-in-nodejs)
+      - [Code](#code)
+      - [Run Project](#run-project)
+      - [Finish](#Finish)
+- [Common Questions](#common-questions)
 - [Possibles Problems](#possibles-problems)
+- [References](#references)
 
 [](#getting-started)
+
+[](#windows)
+
+[](#vcxsrv)
+
+[](#download-vcxsrv)
+
+## Download VcXsrv
+
+> Click to [here](https://ufpr.dl.sourceforge.net/project/vcxsrv/vcxsrv/1.20.9.0/vcxsrv-64.1.20.9.0.installer.exe) for downloading VcXsrv
+
+[](#install-vcxsrv)
+
+## Install VcXsrv
+
+> Open the file `vcxsrv-64.1.20.9.0.installer.exe`.  
+> Select the type of install `Full`, click in next and install.  
+> After installing click in `Close` to finish.
+
+[](#usage-vcxsrv)
+
+## Usage VcXsrv
+
+> Press `Win` to open search bar, and open program `XLaunch`.
+
+![open-xlaunch](https://user-images.githubusercontent.com/55293671/119524211-d21d4180-bd53-11eb-8112-081a1fd96a1f.png)
+
+> Select display setting `Multiple windows`, with Display number `-1` and next.
+
+![display-settings-and-next](https://user-images.githubusercontent.com/55293671/119524210-d184ab00-bd53-11eb-9472-e8157d9529ce.png)
+
+> Select option `Start no client`, and next.
+
+![select-start-no-client-and-next](https://user-images.githubusercontent.com/55293671/119524214-d2b5d800-bd53-11eb-8c76-6bdb9978aa7f.png)
+
+> Check the option `Disable access control`, and next.
+
+![select-disable-access-control-and-next](https://user-images.githubusercontent.com/55293671/119524213-d2b5d800-bd53-11eb-85a2-87e74f663674.png)
+
+> Click to `Finish`
+
+![click-to-finish](https://user-images.githubusercontent.com/55293671/119524711-435cf480-bd54-11eb-87ab-b0919c972ef7.png)
+
+> The XLaunch Srv running in background.
+
+![background-running](https://user-images.githubusercontent.com/55293671/119525185-ababd600-bd54-11eb-9003-7190cb7c9abf.png)
+
+[](#linux-wsl-2)
 
 [](#update-apt-packages)
 
@@ -183,7 +238,12 @@ $ node index.js
 
 > Should open the browser in goto page `https://example.com`
 
----
+[](common-questions)
+
+## Common Questions
+
+**How to Automate execution of program XLaunch and script WSL 2 Bridge Mode?**  
+R: Click to [here](https://gist.github.com/HallexCosta/c090c1dfe5e6ff26333ad8d29bb6aed9) for go along a easy tutorial step to step.
 
 [](#possibles-problems)
 
@@ -191,8 +251,6 @@ $ node index.js
 
 Failed to download Chromium r536395! Set "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" env variable to skip download.  
 https://github.com/puppeteer/puppeteer/issues/2173
-
----
 
 [](#references)
 

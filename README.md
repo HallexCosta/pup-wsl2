@@ -244,6 +244,9 @@ $ node index.js
 
 **How to Automate execution of program XLaunch and script WSL 2 Bridge Mode?**  
 R: Click to [here](https://gist.github.com/HallexCosta/c090c1dfe5e6ff26333ad8d29bb6aed9) for go along a easy tutorial step to step.
+  
+**Software for auto execution script using DotNet v5.0**  
+R: Click to [here](https://github.com/HallexCosta/wsl2-fix-network-gui/) for go along repository.
 
 [](#possibles-problems)
 
